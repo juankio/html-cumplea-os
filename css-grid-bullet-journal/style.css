@@ -3,9 +3,9 @@
 }
 
 body {
-  background: #222;
+  background: rgb(156, 213, 247);
   font-family: "Gochi Hand", sans-serif;
-  color: #333;
+  color: rgb(0, 0, 0);
 }
 
 aside.context {
@@ -65,9 +65,9 @@ footer a .icons {
 }
 
 .notebook {
-  max-width: 1000px;
-  min-width: 600px;
-  min-height: 600px;
+  max-width: 1200px;
+  min-width: 700px;
+  min-height: 700px;
   margin: auto;
   border-radius: 20px;
   background: #4729ec;
@@ -119,15 +119,16 @@ footer a .icons {
 .days {
   grid-area: days;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  grid-gap: 15px;
-  margin-right: 22px;
+  grid-gap: 10px;
+  margin-right: 15px;
 }
 
 .days__item {
   border: 2px solid #111;
   position: relative;
+  border-radius: 3px;
 }
 
 .days__item:nth-child(1) {
@@ -148,14 +149,6 @@ footer a .icons {
   box-shadow: 3px 3px 0 0 rgba(137, 172, 248, 0.7);
 }
 
-.days__item:nth-child(5) {
-  box-shadow: 3px 3px 0 0 rgba(137, 172, 248, 0.7);
-}
-
-.days__item:nth-child(6) {
-  box-shadow: 3px 3px 0 0 rgba(137, 172, 248, 0.7);
-
-}
 
 .days__day {
   padding: 5px 5px 2px;
@@ -167,6 +160,7 @@ footer a .icons {
   padding: 8px;
   font-size: 14px;
   line-height: .9;
+  font: 16px "Lobster", cursive;
 }
 
 .days p {
@@ -203,8 +197,8 @@ footer a .icons {
 
 .days .highlighted .text:after {
   content: '';
-  background: rgba(239, 184, 186, 0.3);
-  width: 95%;
+  background: rgba(35, 90, 207, 0.568);
+  width: 85%;
   height: 100%;
   position: absolute;
   left: 2px;
@@ -219,13 +213,14 @@ footer a .icons {
   border-width: 0 2px 2px;
   margin: 35px 20px 0 0;
   position: relative;
+  border-radius: 3px;
 }
 
 .notes span {
   display: block;
   margin: -25px 22px;
   font: 32px "Lobster", cursive;
-  text-shadow: 2px 1px 0 #fbfae8, 5px 4px 0 coral;
+  text-shadow: 2px 1px 0 #fbfae8, 5px 4px 0 rgb(80, 135, 255);
 }
 
 .notes span:before {
@@ -243,6 +238,8 @@ footer a .icons {
   margin-top: 24px;
   padding: 10px;
   line-height: 1.2;
+  font: 16px "Lobster", cursive;
+
 }
 
 .expenses {
@@ -255,11 +252,15 @@ footer a .icons {
   grid-template-rows: repeat(4, auto);
 }
 
+
+
 .expenses h4 {
-  text-align: center;
-  margin: 0 0 10px;
-  font: 20px/1 "Rock Salt", cursive;
+  display: block;
+  margin: -25px 22px;
+  font: 32px "Lobster", cursive;
+  text-shadow: 2px 1px 0 #fbfae8, 5px 4px 0 rgb(80, 135, 255);
 }
+
 
 .expenses h4:first-of-type {
   grid-column: 1 / span 4;
@@ -269,6 +270,7 @@ footer a .icons {
   border: 2px solid #111;
   grid-column: span 2;
   padding: 10px 10px 10px;
+  border-radius: 3px;
 }
 
 .expenses__title {
@@ -287,7 +289,7 @@ footer a .icons {
   width: 99%;
   padding: 10px 10px 5px;
   background: rgba(239, 184, 186, 0.4);
-  box-shadow: 3px 3px 0 0 rgba(231, 149, 152, 0.7);
+  box-shadow: 3px 3px 0 0 rgba(73, 115, 204, 0.7);
   font: 16px/1 "Rock Salt", cursive;
 }
 
@@ -330,7 +332,7 @@ footer a .icons {
   text-align: center;
   display: block;
   font: 14px/1 "Gochi Hand", cursive;
-  color: #f4442e;
+  color: #2b2eec;
 }
 
 .goals {
@@ -339,10 +341,11 @@ footer a .icons {
   border: 2px solid #111;
   border-width: 0 2px 2px;
   position: relative;
+  border-radius: 3px;
 }
 
 .goals__item {
-  padding: 3px 12px;
+  padding: 5px 12px;
 }
 
 .goals__item__checkbox {
@@ -350,7 +353,7 @@ footer a .icons {
   width: 20px;
   height: 20px;
   display: inline-block;
-  margin-right: 5px;
+  margin-right: 10px;
   position: relative;
 }
 
@@ -359,7 +362,7 @@ footer a .icons {
   display: inline-block;
   position: absolute;
   top: -4px;
-  color: #db6165;
+  color: #4a9eee;
 }
 
 .goals__item__desc {
@@ -380,7 +383,7 @@ footer a .icons {
   display: block;
   margin: -25px 22px;
   font: 32px "Lobster", cursive;
-  text-shadow: 2px 1px 0 #fbfae8, 5px 4px 0 coral;
+  text-shadow: 2px 1px 0 #fbfae8, 5px 4px 0 rgb(71, 141, 245);
 }
 
 .goals>span:nth-child(2):before {
@@ -395,7 +398,7 @@ footer a .icons {
 }
 
 .goals__inner {
-  margin-top: 40px;
+  margin-top: 50px;
 }
 
 .music {
@@ -409,19 +412,13 @@ footer a .icons {
 }
 
 .music__artist {
-  color: #e4572e;
-  margin: 15px 0;
-  transform: rotate(-10deg);
+  color: #194efd;
+  margin: 25px 0;
+  transform: rotate(-20deg);
   max-width: 50px;
   font: 24px/.8 'Gochi Hand', cursive;
 }
 
-.music svg {
-  width: 65px;
-  position: absolute;
-  bottom: 0px;
-  right: -10px;
-}
 
 .tracker {
   grid-area: tracker;
@@ -460,7 +457,7 @@ footer a .icons {
 .tracker__bubble:nth-child(10),
 .tracker__bubble:nth-child(12),
 .tracker__bubble:nth-child(13) {
-  background: rgba(244, 68, 46, 0.5);
+  background: rgba(66, 103, 224, 0.5);
 }
 
 .tracker__bubble:nth-child(17),
@@ -468,46 +465,79 @@ footer a .icons {
 .tracker__bubble:nth-child(19),
 .tracker__bubble:nth-child(22),
 .tracker__bubble:nth-child(23) {
-  background: rgba(239, 184, 186, 0.5);
+  background: rgba(34, 107, 241, 0.5);
 }
 
 .tracker__bubble:nth-child(27),
 .tracker__bubble:nth-child(29),
 .tracker__bubble:nth-child(30) {
-  background: rgba(255, 127, 80, 0.5);
+  background: rgba(40, 135, 243, 0.5);
 }
 
-/* Responsive here
+
+.gg {
+  position: 2px, 30px, 20px;
+  display: block;
+  margin: 15px 10px;
+  height: 150px;
+  width: 200px;
+
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+
+}
+
+.cat {
+  height: 100px;
+  width: 100px;
+  padding: 3px;
+  background-color: #ffffff;
+  width: 100px;
+  border: 1px solid #000000;
+  float: right;
+}
+
+.mio {
+  height: 80px;
+  width: 100px;
+  padding: 3px;
+}
+
+/*
 @media screen and (max-width: 768px) {
-	.main-content {
-		padding: 1em;
-	}
-	.notebook__inner {
-		grid-template-columns: 40% 25% 35%;
-		grid-template-rows: auto;
-		grid-template-areas: 
-			"title title title" 
-			"days days days" 
-			"notes notes notes" 
-			"expenses expenses expenses"
-			"goals quote picture"
-			"tracker tracker picture";
-		> div {
-			margin: 30px 20px;
-		}
-		&:after {
-			width: 100%;
-			height: 100px;
-			bottom: 0;
-			background: linear-gradient(
-				to bottom,
-				transparent 10%,
-				rgba(153, 153, 153, 0.05) 50%,
-				rgba(153, 153, 153, 0.4) 51%,
-				rgba(153, 153, 153, 0.15) 51.5%,
-				transparent 90%
-			);
-		}
-	}
+  .main-content {
+    padding: 1em;
+  }
+
+  .notebook__inner {
+    grid-template-columns: 40% 25% 35%;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "title title title"
+      "days days days"
+      "notes notes notes"
+      "expenses expenses expenses"
+      "goals quote picture"
+      "tracker tracker picture";
+  }
+
+  div {
+    margin: 30px 20px;
+  }
+
+  &:after {
+    width: 100%;
+    height: 100px;
+    bottom: 0;
+    background: linear-gradient(to bottom,
+        transparent 10%,
+        rgba(153, 153, 153, 0.05) 50%,
+        rgba(153, 153, 153, 0.4) 51%,
+        rgba(153, 153, 153, 0.15) 51.5%,
+        transparent 90%);
+  }
 }
 */
