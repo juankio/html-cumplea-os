@@ -1,0 +1,176 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(156, 213, 247);
+    font-family: "Gochi Hand", sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+aside.context {
+    text-align: center;
+    color: #fff;
+    line-height: 1.7;
+    font-size: 20px;
+    letter-spacing: .5px;
+}
+
+aside.context a {
+    text-decoration: none;
+    color: #fff;
+    padding: 3px 0;
+    border-bottom: 1px dashed;
+}
+
+aside.context a:hover {
+    border-bottom: 1px solid;
+}
+
+aside.context .explanation {
+    max-width: 700px;
+    margin: 4em auto 0;
+}
+
+footer {
+    text-align: center;
+    margin: 4em auto;
+    width: 100%;
+}
+
+footer a {
+    text-decoration: none;
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: transparent;
+    border: 1px dashed #fff;
+    color: #fff;
+    margin: 5px;
+}
+
+footer a:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+footer a .icons {
+    margin-top: 12px;
+    display: inline-block;
+    font-size: 20px;
+}
+
+.main-content {
+    margin: 7em auto;
+}
+
+.notebook {
+    max-width: 800px;
+    min-width: 600px;
+    min-height: 400px;
+    margin: auto;
+    border-radius: 20px;
+    background: #4729ec;
+    padding: 4px 6px 2.5px;
+}
+
+.notebook__inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 16px;
+    background: linear-gradient(90deg, #fbfae8 15px, transparent 1%) center, linear-gradient(#fbfae8 15px, transparent 1%) center, #ccc;
+    background-size: 16px 16px;
+    display: grid;
+    padding: 30px 20px 25px;
+    grid-template-areas: "title expenses picture""days expenses picture""days expenses picture""days goals quote""notes tracker tracker";
+    grid-template-columns: 50% 30% 20%;
+    grid-template-rows: 18% auto auto 30% 25%;
+}
+
+.notebook__inner:after {
+    content: "";
+    width: 100px;
+    height: 100%;
+    top: 0;
+    margin: auto;
+    left: 0;
+    right: 0;
+    position: absolute;
+    background: linear-gradient(to right, transparent 10%, rgba(153, 153, 153, 0.05) 50%, rgba(153, 153, 153, 0.4) 51%, rgba(153, 153, 153, 0.15) 51.5%, transparent 90%);
+}
+
+.title {
+
+    grid-area: title;
+    text-align: center;
+}
+
+.title h1 {
+    font: 50px/1 "Lobster", cursive;
+    text-shadow: 2px 1px 0 #fbfae8, 5px 4px 0 rgb(80, 170, 255);
+    margin: 0;
+    text-align: center;
+}
+
+.title h3 {
+    font: 13px/1.2 "Rock Salt", cursive;
+    margin: 8px;
+}
+
+img {
+    float: left;
+    position: relative;
+    left: 40px;
+    height: 350px;
+    width: 350px;
+    padding: 3px;
+    background-color: #ffffff;
+    width: 300px;
+    border: 3px solid #000000;
+
+}
+
+
+
+.mio {
+    height: 80px;
+    width: 100px;
+    padding: 3px;
+}
+
+.mover {
+    position: relative;
+}
+
+.highlighted {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding: 8px;
+    left: 0;
+    text-align: center;
+
+}
+
+.highlighted .text {
+    margin-top: 5px;
+    position: relative;
+}
+
+.highlighted .text span {
+    position: relative;
+    z-index: 2;
+}
+
+.highlighted .text:after {
+    content: '';
+    background: rgba(35, 90, 207, 0.568);
+    width: 85%;
+    height: 100%;
+    position: absolute;
+    left: 2px;
+    top: 0;
+    z-index: 1;
+    transform: rotate(-3deg);
+}
